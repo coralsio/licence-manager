@@ -2,6 +2,6 @@
 
 return [
     'licence' => [
-        'unlimited' => 'Unlimited'
-    ]
+        'unlimited' => 'Unlimited',
+    ],
 ];

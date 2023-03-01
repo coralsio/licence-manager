@@ -3,6 +3,6 @@
 return [
     'licence' => [
         'title' => 'Licences',
-        'title_singular' => 'Licence'
-    ]
+        'title_singular' => 'Licence',
+    ],
 ];

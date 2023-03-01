@@ -13,7 +13,6 @@ class LicenceManagerObserverServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
         Licence::observe(LicenceObserver::class);
     }
 }

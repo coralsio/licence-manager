@@ -8,7 +8,8 @@ use Spatie\Activitylog\Traits\LogsActivity;
 
 class Licence extends BaseModel
 {
-    use PresentableTrait, LogsActivity;
+    use PresentableTrait;
+    use LogsActivity;
 
     protected $table = 'licence_manager_licences';
     /**
@@ -39,7 +40,7 @@ class Licence extends BaseModel
     {
         $expiration_date = trans('LicenceManager::labels.licence.unlimited');
 
-        if (!$this->parent) {
+        if (! $this->parent) {
             return $expiration_date;
         }
         if ($this->expiry_period === 0) {

@@ -29,7 +29,6 @@ class LicenceManagerServiceProvider extends BasePackageServiceProvider
      * Bootstrap the application events.
      * @throws \ReflectionException
      */
-
     public function bootPackage()
     {
         // Load view

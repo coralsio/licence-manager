@@ -9,7 +9,7 @@ use Corals\Modules\LicenceManager\database\seeds\LicenceManagerDatabaseSeeder;
 class UninstallModuleServiceProvider extends BaseUninstallModuleServiceProvider
 {
     protected $migrations = [
-        LicenceManagerTables::class
+        LicenceManagerTables::class,
     ];
 
     protected function providerBooted()

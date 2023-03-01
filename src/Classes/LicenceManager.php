@@ -7,7 +7,7 @@ class LicenceManager
     /**
      * LicenceManager constructor.
      */
-    function __construct()
+    public function __construct()
     {
     }
 
@@ -28,7 +28,7 @@ class LicenceManager
 
                 $product = $item->sku->product;
 
-                if (!$product->hasProperty('has_licence')) {
+                if (! $product->hasProperty('has_licence')) {
                     continue;
                 }
 
@@ -39,7 +39,7 @@ class LicenceManager
                         $licence->update([
                             'parent_type' => get_class($order),
                             'parent_id' => $order->id,
-                            'status' => 'reserved'
+                            'status' => 'reserved',
                         ]);
                     } else {
                         //TODO:: handle if no licence found
@@ -60,7 +60,7 @@ class LicenceManager
     {
         $product = $sku->product;
 
-        if (!$product->hasProperty('has_licence')) {
+        if (! $product->hasProperty('has_licence')) {
             return $inventory;
         }
 
@@ -75,7 +75,7 @@ class LicenceManager
     {
         $licences = $order->licenceList->get();
 
-        if (!$licences->isEmpty()) {
+        if (! $licences->isEmpty()) {
             echo view('LicenceManager::licences.partials.order_details', compact('order', 'licences'))->render();
         }
     }

@@ -10,8 +10,8 @@ return [
                 'reserved' => 'LicenceManager::attributes.licence.status_options.reserved',
                 'cancelled' => 'LicenceManager::attributes.licence.status_options.cancelled',
                 'invalid' => 'LicenceManager::attributes.licence.status_options.invalid',
-                'expired' => 'LicenceManager::attributes.licence.status_options.expired'
-            ]
+                'expired' => 'LicenceManager::attributes.licence.status_options.expired',
+            ],
         ],
-    ]
+    ],
 ];

@@ -59,7 +59,7 @@ class LicencesController extends BaseController
 
             $codes = explode("\r\n", $request->get('codes'));
 
-            if (!is_array($codes)) {
+            if (! is_array($codes)) {
                 throw new \Exception(trans('LicenceManager::exceptions.licence.invalid_codes_array'));
             }
 

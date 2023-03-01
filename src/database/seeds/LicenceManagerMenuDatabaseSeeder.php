@@ -22,11 +22,12 @@ class LicenceManagerMenuDatabaseSeeder extends Seeder
             'description' => 'Licence Manager Menu Item',
             'icon' => 'fa fa-barcode',
             'target' => null, 'roles' => '["1"]',
-            'order' => 0
+            'order' => 0,
         ]);
 
         // seed subscriptions children menu
-        \DB::table('menus')->insert([
+        \DB::table('menus')->insert(
+            [
                 [
                     'parent_id' => $licenceManager_menu_id,
                     'key' => null,
@@ -36,7 +37,7 @@ class LicenceManagerMenuDatabaseSeeder extends Seeder
                     'description' => 'Licences List Menu Item',
                     'icon' => 'fa fa-list',
                     'target' => null, 'roles' => '["1"]',
-                    'order' => 0
+                    'order' => 0,
                 ],
             ]
         );
