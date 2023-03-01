@@ -3,12 +3,11 @@
 namespace Corals\Modules\LicenceManager\Policies;
 
 use Corals\Foundation\Policies\BasePolicy;
-use Corals\User\Models\User;
 use Corals\Modules\LicenceManager\Models\Licence;
+use Corals\User\Models\User;
 
 class LicencePolicy extends BasePolicy
 {
-
     /**
      * @param User $user
      * @return bool
@@ -18,6 +17,7 @@ class LicencePolicy extends BasePolicy
         if ($user->can('LicenceManager::licence.view')) {
             return true;
         }
+
         return false;
     }
 
@@ -40,6 +40,7 @@ class LicencePolicy extends BasePolicy
         if ($user->can('LicenceManager::licence.update')) {
             return true;
         }
+
         return false;
     }
 
@@ -53,6 +54,7 @@ class LicencePolicy extends BasePolicy
         if ($user->can('LicenceManager::licence.delete')) {
             return true;
         }
+
         return false;
     }
 }

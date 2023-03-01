@@ -2,6 +2,6 @@
 
 return [
     'licence' => [
-        'invalid_codes_array' => 'Invalid codes array'
-    ]
+        'invalid_codes_array' => 'Invalid codes array',
+    ],
 ];

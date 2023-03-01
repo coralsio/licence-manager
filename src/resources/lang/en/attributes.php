@@ -15,10 +15,10 @@ return [
             'reserved' => 'Reserved',
             'cancelled' => 'Cancelled',
             'invalid' => 'Invalid',
-            'expired' => 'Expired'
-        ]
+            'expired' => 'Expired',
+        ],
     ],
     'product' => [
-        'has_licence' => 'Has Licence'
-    ]
+        'has_licence' => 'Has Licence',
+    ],
 ];

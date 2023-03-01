@@ -31,7 +31,7 @@ class LicenceTransformer extends BaseTransformer
             'expiration_date' => $licence->expiration_date,
             'created_at' => format_date($licence->created_at),
             'updated_at' => format_date($licence->updated_at),
-            'action' => $this->actions($licence)
+            'action' => $this->actions($licence),
         ];
 
         return parent::transformResponse($transformedArray);

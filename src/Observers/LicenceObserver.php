@@ -6,7 +6,6 @@ use Corals\Modules\LicenceManager\Models\Licence;
 
 class LicenceObserver
 {
-
     /**
      * @param Licence $licence
      */

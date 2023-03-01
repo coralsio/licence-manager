@@ -32,13 +32,13 @@ class LicenceRequest extends BaseRequest
         if ($this->isUpdate() || $this->isStore()) {
             $rules = array_merge($rules, [
                 'licenceable_type' => 'required',
-                'licenceable_id' => 'required'
+                'licenceable_id' => 'required',
             ]);
         }
 
         if ($this->isStore()) {
             $rules = array_merge($rules, [
-                'codes' => 'required'
+                'codes' => 'required',
             ]);
         }
 
@@ -47,7 +47,7 @@ class LicenceRequest extends BaseRequest
 
             $rules = array_merge($rules, [
                 'code' => 'required',
-                'status' => 'required'
+                'status' => 'required',
             ]);
         }
 

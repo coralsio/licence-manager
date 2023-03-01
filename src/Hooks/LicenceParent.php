@@ -2,7 +2,6 @@
 
 namespace Corals\Modules\LicenceManager\Hooks;
 
-
 use Corals\Modules\LicenceManager\Models\Licence;
 
 class LicenceParent
