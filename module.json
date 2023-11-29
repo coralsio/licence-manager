@@ -6,7 +6,7 @@
     "description": "Licence Manager for products",
     "namespace": "Corals\\Modules\\LicenceManager\\",
     "provider": "LicenceManagerServiceProvider",
-    "version": "3.0",
+    "version": "10.0.0",
     "load_order": "700",
     "folder": "LicenceManager",
     "autoload": "psr-4",
