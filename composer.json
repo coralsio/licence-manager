@@ -28,7 +28,7 @@
         "laravel/pint": "^1.0"
     },
     "require": {
-        "corals/ecommerce": "^1.0"
+        "corals/ecommerce": "^10.0.0"
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
