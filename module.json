@@ -12,8 +12,8 @@
     "autoload": "psr-4",
     "icon": "fa fa-barcode",
     "require": {
-        "corals-foundation": "^6.0",
-        "corals-ecommerce": "^5.0"
+        "corals-foundation": "^10.0.0",
+        "corals-ecommerce": "^10.0.0"
     },
     "supported_platforms": [
         "Ecommerce",
